@@ -112,13 +112,13 @@ function printRow(videojuego){
 }
 
 function deleteR(id){
-    const lista_videojuegos = JSON.parse(localStorage.getItem("Videojuego"));
+    const lista_videojuegos = JSON.parse(localStorage.getItem("Videojuegos"));
     var temporal=lista_videojuegos.filter(videojuego=>videojuego.id!=id);
-    localStorage.setItem("Videojuego", JSON.stringify(temporal));
+    localStorage.setItem("Videojuegos", JSON.stringify(temporal));
 
     if(temporal.length==0)
     { 
-        localStorage.removeItem("Videojuego");
+        localStorage.removeItem("Videojuegos");
     }
   
     read();
