@@ -146,7 +146,7 @@ function updateR(videojuego){
 }
 
 
-//Para consulta de carrera
+//Para consulta de videojuego
 function readQ(){
     document.getElementById("Table2").innerHTML='';
     var c = document.getElementById("Input6").value;
